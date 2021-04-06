@@ -49,3 +49,16 @@
     text-decoration: underline;
     transform: rotate(-90deg);
 }
+
+.btn-group-lg>.btn,
+.btn-lg {
+    font-size: 1rem;
+}
+
+.form-control {
+    height: 35px;
+}
+
+.icono {
+    height: 35px;
+}
