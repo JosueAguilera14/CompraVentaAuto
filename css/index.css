@@ -62,3 +62,8 @@
 .icono {
     height: 35px;
 }
+
+.navbar {
+    position: sticky;
+    top: 0;
+}
