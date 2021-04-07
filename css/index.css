@@ -1,3 +1,6 @@
+
+/*NavBar*/
+
 .logo-empresa {
     font-size: 1rem;
 }
@@ -39,7 +42,7 @@
     position: relative;
 }
 
-.dropdown-submenu>.dropdown-menu {
+.dropdown-submenu > .dropdown-menu {
     top: 0;
     left: 100%;
     margin-top: -6px;
@@ -50,7 +53,7 @@
     transform: rotate(-90deg);
 }
 
-.btn-group-lg>.btn,
+.btn-group-lg > .btn,
 .btn-lg {
     font-size: 1rem;
 }
@@ -61,4 +64,148 @@
 
 .icono {
     height: 35px;
+}
+
+
+/* *** HeroImage *** */
+
+.hero-image {
+    /*Usando variable CSS del estilo en línea de .hero-image para poner la URL de la imagen*/
+    background-image: var(--hero-image);
+    /*Quitando el efecto de repitición de la imagen*/
+    background-repeat: no-repeat;
+    /*Haciendo que la imagen ocupe todo el ancho*/
+    background-size: cover;
+    /*Centrando imagen en su contenedor*/
+    background-position: center;
+    /*Dejando fijada la imagen para que el contenido del sitio pase sobre ella
+    (usando fixed en background-attachment)*/
+    background-attachment: var(--hero-attachment);
+}
+
+.hero-image-opacity {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--hero-opacity-color);
+}
+
+.hero-image-title {
+    font-size: 5.5vw;
+    color: var(--hero-text-color);
+    font-weight: 700;
+    
+}
+
+
+
+/* *** Carousel slider *** */
+
+
+/*Utilidades*/
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: var(--max-width);
+}
+
+.section-title{
+    border-top: thin solid #343a40;
+    border-bottom: thin solid #343a40;
+    margin: 2rem auto;
+    padding: .5rem;
+    width: 250px;
+    text-align: center;
+    color: #333333;
+}
+
+
+
+/*Slider*/
+
+
+
+@keyframes carousel-slide{
+    0%{
+        transform: translateX(0%);
+    }
+
+    25%{
+        transform: translateX(-25%);
+    }
+
+    50%{
+        transform: translateX(-50%);
+    }
+
+    75%{
+        transform: translateX(-75%);
+    }
+}
+
+.carousel{
+    margin: 2rem auto;
+    padding: 2rem 0;
+    max-width: 800px;
+    text-align: center;
+    overflow-x: hidden;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.carousel .slides{
+    padding-left: 0;
+    /* 100% por cada slide*/
+    width: 400%;
+    display: flex;
+    list-style: none;
+    transition: transform .5s ease-in-out;
+    animation: carousel-slide 12s ease-in-out 3s;
+    
+}
+
+.carousel input{
+    display: none;
+}
+
+.carousel label{
+    border: medium solid #666666;
+    border-radius: 50%;
+    margin: 0 .25rem;
+    display: inline-block;
+    width: .75rem;
+    height: .75rem;
+    cursor: pointer;
+}
+
+
+/* La pseudo-clase :checked de CSS representa cualquier radio (<input type="radio"> (en-US)), 
+checkbox (<input type="checkbox">) u option (<option> en un elemento <select>) que está marcado 
+o conmutado a un estado(checkeado o seleccionado) */
+/* '~' es el pseudo-selector de hermanos le da estilos a todos los hermanos 
+siguiente(que sean la misma etiqueta)*/
+#slide-1:checked ~ .slides{
+    transform: translateX(0%);
+}
+
+#slide-2:checked ~ .slides{
+    transform: translateX(-25%);
+}
+
+#slide-3:checked ~ .slides{
+    transform: translateX(-50%);
+}
+
+#slide-4:checked ~ .slides{
+    transform: translateX(-75%);
+}
+
+/* Seleccionando cada cada hermana <label> con su respectivo id, al checkear estas se cambia su fondo a gris oscuro */
+#slide-1:checked ~ .slides-nav label#dot-1,
+#slide-2:checked ~ .slides-nav label#dot-2,
+#slide-3:checked ~ .slides-nav label#dot-3,
+#slide-4:checked ~ .slides-nav label#dot-4{
+    background-color: #666666;
 }
