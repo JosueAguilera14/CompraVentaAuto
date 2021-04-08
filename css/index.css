@@ -1,3 +1,5 @@
+    /*NavBar*/
+
 .logo-empresa {
     font-size: 1rem;
 }
@@ -66,4 +68,170 @@
 .navbar {
     position: sticky;
     top: 0;
-}
+    /* *** HeroImage *** */
+    .hero-image {
+        /*Usando variable CSS del estilo en línea de .hero-image para poner la URL de la imagen*/
+        background-image: var(--hero-image);
+        /*Quitando el efecto de repitición de la imagen*/
+        background-repeat: no-repeat;
+        /*Haciendo que la imagen ocupe todo el ancho*/
+        background-size: cover;
+        /*Centrando imagen en su contenedor*/
+        background-position: center;
+        /*Dejando fijada la imagen para que el contenido del sitio pase sobre ella
+    (usando fixed en background-attachment)*/
+        background-attachment: var(--hero-attachment);
+    }
+    .hero-image-opacity {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: var(--hero-opacity-color);
+    }
+    .hero-image-title {
+        font-size: 5.5vw;
+        color: var(--hero-text-color);
+        font-weight: 700;
+    }
+    /* *** Carousel slider *** */
+    /*Utilidades*/
+    img {
+        /*Este reseteo de las imagenes es para que se adapte el tamaño a la pantalla(ya sea Desktop o Responsive)*/
+        max-width: 100%;
+        height: auto;
+    }
+    p {
+        line-height: 1.6;
+    }
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+    }
+    .container h2 {
+        font-size: 1.5rem;
+        padding: 1rem;
+        width: 25rem;
+    }
+    .section-title {
+        border-top: thin solid #343a40;
+        border-bottom: thin solid #343a40;
+        margin: 2rem auto;
+        padding: .5rem;
+        width: 500px;
+        text-align: center;
+        color: #333333;
+        order: -2;
+    }
+    /*Slider*/
+    @keyframes carousel-slide {
+        0% {
+            transform: translateX(0%);
+        }
+        25% {
+            transform: translateX(-25%);
+        }
+        50% {
+            transform: translateX(-50%);
+        }
+        75% {
+            transform: translateX(-75%);
+        }
+    }
+    .carousel {
+        margin: 2rem auto;
+        padding: 2rem 0;
+        max-width: 800px;
+        text-align: center;
+        overflow-x: hidden;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+    .carousel .slides {
+        padding-left: 0;
+        /* 100% por cada slide*/
+        width: 400%;
+        display: flex;
+        list-style: none;
+        transition: transform .5s ease-in-out;
+        animation: carousel-slide 12s ease-in-out 3s;
+    }
+    .carousel input {
+        display: none;
+    }
+    .carousel label {
+        border: medium solid #666666;
+        border-radius: 50%;
+        margin: 0 .25rem;
+        display: inline-block;
+        width: .75rem;
+        height: .75rem;
+        cursor: pointer;
+    }
+    /* La pseudo-clase :checked de CSS representa cualquier radio (<input type="radio"> (en-US)), 
+checkbox (<input type="checkbox">) u option (<option> en un elemento <select>) que está marcado 
+o conmutado a un estado(checkeado o seleccionado) */
+    /* '~' es el pseudo-selector de hermanos le da estilos a todos los hermanos 
+siguiente(que sean la misma etiqueta)*/
+    #slide-1:checked~.slides {
+        transform: translateX(0%);
+    }
+    #slide-2:checked~.slides {
+        transform: translateX(-25%);
+    }
+    #slide-3:checked~.slides {
+        transform: translateX(-50%);
+    }
+    #slide-4:checked~.slides {
+        transform: translateX(-75%);
+    }
+    /* Seleccionando cada cada hermana <label> con su respectivo id, al checkear estas se cambia su fondo a gris oscuro */
+    #slide-1:checked~.slides-nav label#dot-1,
+    #slide-2:checked~.slides-nav label#dot-2,
+    #slide-3:checked~.slides-nav label#dot-3,
+    #slide-4:checked~.slides-nav label#dot-4 {
+        background-color: #666666;
+    }
+    /*imagenes con info que acompañan al slider*/
+    .info {
+        margin: 1.3rem auto;
+        padding: .8rem;
+        height: 100%;
+    }
+    .info p {
+        margin: 1rem 0;
+    }
+    .info img {
+        width: 100%;
+        height: 100%;
+        /*Esto hace que las imágenes no se deformen*/
+        object-fit: cover;
+    }
+    .info,
+    .container {
+        height: 75%;
+    }
+    /*Responsive Design de contenido slider*/
+    .contenido .hero-image-content {
+        display: grid;
+    }
+    .hero-image-content .container {
+        order: -1;
+    }
+    @media screen and (min-width: 768px) {
+        .contenido .hero-image-content {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .hero-image-content .container {
+            order: 0;
+        }
+        .section-title {
+            grid-column: span 3;
+        }
+        .info {
+            max-width: 500px;
+            max-height: 300px;
+        }
+    }
