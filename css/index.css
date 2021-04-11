@@ -245,6 +245,39 @@ siguiente(que sean la misma etiqueta)*/
     .hero-image-content .container {
         order: -1;
     }
+    /* FOOTER */
+    
+    .footer {
+        padding: 20px;
+        color: white;
+        display: flex;
+        text-align: center;
+    }
+    
+    .logo-footer {
+        float: left;
+        padding-top: 30px;
+    }
+    
+    .social {
+        text-align: right;
+        padding-top: 50px;
+    }
+    
+    .social li {
+        display: inline-block;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .social a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+    
+    .derechos {
+        text-align: center;
+    }
     
     @media screen and (min-width: 768px) {
         .contenido .hero-image-content {
