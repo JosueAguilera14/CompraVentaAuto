@@ -73,7 +73,7 @@
     
     .hero-image {
         /*Usando variable CSS del estilo en línea de .hero-image para poner la URL de la imagen*/
-        background-image: url('img/heroImage.jpg');
+        background-image: url('/img/heroImage.jpg');
         /*Quitando el efecto de repitición de la imagen*/
         background-repeat: no-repeat;
         /*Haciendo que la imagen ocupe todo el ancho*/
@@ -102,7 +102,7 @@
     }
 
     .contenido .hero-image{
-        background-image: url( 'img/heroImage-services.jpg');
+        background-image: url( '/img/heroImage-services.jpg');
         background-attachment: scroll;
     }
 
