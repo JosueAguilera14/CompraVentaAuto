@@ -81,7 +81,7 @@
         /*Centrando imagen en su contenedor*/
         background-position: center;
         /*Dejando fijada la imagen para que el contenido del sitio pase sobre ella
-    (usando fixed en background-attachment)*/
+        (usando fixed en background-attachment)*/
         background-attachment: var(--hero-attachment);
     }
     
