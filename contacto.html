@@ -47,21 +47,21 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Catálogo </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="albumAutos.html">Tipo de Auto</a>
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Tipo de Auto</a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="albumAutos.html/#sedan">Sedán</a></li>
-                                        <li><a class="dropdown-item" href="albumAutos.html/#suv">SUV</a></li>
-                                        <li><a class="dropdown-item" href="albumAutos.html/#convertible">Convertible</a></li>
-                                        <li><a class="dropdown-item" href="albumAutos.html/#doblecabina">Doble Cabina</a></li>
-                                        <li><a class="dropdown-item" href="albumAutos.html/#furgon">Furgón</a></li>
-                                        <li><a class="dropdown-item" href="albumAutos.html/#hatchback">Hatchback</a></li>
-                                        <li><a class="dropdown-item" href="albumAutos.html/#coupe">Coupé</a></li>
-                                        <li><a class="dropdown-item" href="albumAutos.html/#stationwagon">Station Wagon</a></li>
+                                        <li><a class="dropdown-item" href="#">Sedán</a></li>
+                                        <li><a class="dropdown-item" href="#">SUV</a></li>
+                                        <li><a class="dropdown-item" href="#">Convertible</a></li>
+                                        <li><a class="dropdown-item" href="#">Doble Cabina</a></li>
+                                        <li><a class="dropdown-item" href="#">Furgón</a></li>
+                                        <li><a class="dropdown-item" href="#">Hatchback</a></li>
+                                        <li><a class="dropdown-item" href="#">Coupé</a></li>
+                                        <li><a class="dropdown-item" href="#">Station Wagon</a></li>
                                     </ul>
                                     <li>
                                         <hr class="dropdown-divider">
@@ -69,14 +69,14 @@
                                 </li>
                                 <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Marcas</a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="albumAutos.html/#suv">Honda</a></li>
-                                        <li><a class="dropdown-item" href="albumAutos.html/#convertible">Maseratti</a></li>
-                                        <li><a class="dropdown-item" href="albumAutos.html/#stationwagon">Nissan</a></li>
-                                        <li><a class="dropdown-item" href="albumAutos.html/#furgon">Renault</a></li>
-                                        <li><a class="dropdown-item" href="albumAutos.html/#sedan">Tesla</a></li>
-                                        <li><a class="dropdown-item" href="albumAutos.html/#doblecabina">Toyota</a></li>
-                                        <li><a class="dropdown-item" href="albumAutos.html/#hatchback">Volkswagen</a></li>
-                                        <!-- <li><a class="dropdown-item" href="albumAutos.html#sedan"></a></li> -->
+                                        <li><a class="dropdown-item" href="#">Chevrolet</a></li>
+                                        <li><a class="dropdown-item" href="#">Ford</a></li>
+                                        <li><a class="dropdown-item" href="#">Hyundai</a></li>
+                                        <li><a class="dropdown-item" href="#">Kia</a></li>
+                                        <li><a class="dropdown-item" href="#">Nissan</a></li>
+                                        <li><a class="dropdown-item" href="#">Mercedes</a></li>
+                                        <li><a class="dropdown-item" href="#">Peugeot</a></li>
+                                        <li><a class="dropdown-item" href="#">Toyota</a></li>
                                     </ul>
                                     <li>
                                         <hr class="dropdown-divider">
@@ -87,7 +87,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contacto.html" tabindex="-1" aria-disabled="true">Contacto</a>
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contacto</a>
                         </li>
                     </ul>
                     <form class="d-flex buscar">
@@ -217,12 +217,14 @@
                 </div>
             </div>
         </div>
+
+        <!-- HeroImage -->
         <section class="home">
-            <article class="hero-image">
+            <article class="hero-image hero-image-contacto">
                 <aside class="hero-image-opacity">
                     <div class="hero-image-content">
                         <h2 class="hero-image-title ">
-                            Raio Macuin<br>siempre contigo
+                            ¡Contactanos!<br>¿Que esperas?
                         </h2>
                     </div>
                 </aside>
@@ -230,84 +232,19 @@
         </section>
     </header>
 
-    <section class="contenido ">
-        <!-- agregando al 'style' una variable CSS con la imagen del HeroImage-->
-        <article class="hero-image">
-         <aside class="hero-image-opacity">
-             <div class="hero-image-content">
-                <h2 class="section-title ">¡Variedad de modelos y ofertas!</h2>
+    <!-- Contacto -->
+    <form class="contact-form box-shadow-1">
+        <input type="text" name="name" placeholder="Ingresa tu nombre *" title="Nombre sólo acepta letras y espacios en blanco" pattern= "^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$">
 
-                <div class="info ">
-                    <img src="img/imagen-info1.jpg " alt="Imagen 1 ">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, laborum delectus. Ducimus, repellat! Quam illum iste molestiae harum, assumenda quia dolore. Aspernatur exercitationem suscipit ab consectetur nam doloremque quibusdam voluptatum?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestias, eum, quae sed vero rerum delectus eos ratione porro expedita aspernatur eveniet nemo iusto! Eos sed laboriosam ipsum iure consequatur!
-                    </p>
-                </div>
-        
-                <div class="container ">
-                    <article class="carousel ">
-                        <input type="radio " name="slides " id="slide-1 " checked>
-                        <input type="radio " name="slides " id="slide-2 ">
-                        <input type="radio " name="slides " id="slide-3 ">
-                        <input type="radio " name="slides " id="slide-4 ">
-        
-                        <!-- <blockquote> sirve para citar uno o más párrafos de un texto( marca las citas a 
-                        otros autores o documentos.)-->
-                        <ul class="slides">
-                            <li class="slide ">
-                                <img class="avatar " src="img/slider01.jpg " alt="Auto 1 ">
-                                <blockquote>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis praesentium voluptates modi sint veniam nemo, doloribus quia deleniti eos dicta, excepturi placeat maiores quo, unde corrupti ullam. Error, facilis
-                        ea! "</blockquote>
-                                <h3>MODELO AUTO</h3>
-                                <h6>Precio Auto</h6>
-                            </li>
-        
-                            <li class="slide ">
-                                <img class="avatar " src="img/slider02.jpg " alt="Auto 2 ">
-                                <blockquote>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis praesentium voluptates modi sint veniam nemo, doloribus quia deleniti eos dicta, excepturi placeat maiores quo, unde corrupti ullam. Error, facilis
-                        ea! "</blockquote>
-                                <h3>MODELO AUTO</h3>
-                                <h6>Precio Auto</h6>
-                            </li>
-        
-                            <li class="slide ">
-                                <img class="avatar " src="img/slider03.jpg " alt="Auto 3 ">
-                                <blockquote>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis praesentium voluptates modi sint veniam nemo, doloribus quia deleniti eos dicta, excepturi placeat maiores quo, unde corrupti ullam. Error, facilis
-                        ea! "</blockquote>
-                                <h3>MODELO AUTO</h3>
-                                <h6>Precio Auto</h6>
-                            </li>
-        
-                            <li class="slide ">
-                                <img class="avatar " src="img/slider04.jpg " alt="Auto 4 ">
-                                <blockquote>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis praesentium voluptates modi sint veniam nemo, doloribus quia deleniti eos dicta, excepturi placeat maiores quo, unde corrupti ullam. Error, facilis
-                        ea! "</blockquote>
-                                <h3>MODELO AUTO</h3>
-                                <h6>Precio Auto</h6>
-                            </li>
-                        </ul>
-        
-                        <!-- <aside class="slides-nav ">
-                            <label for="slide-1 " id="dot-1 "></label>
-                            <label for="slide-2 " id="dot-2 "></label>
-                            <label for="slide-3 " id="dot-3 "></label>
-                            <label for="slide-4 " id="dot-4 "></label>
-                        </aside> -->
-                    </article>
-                </div>
-        
-                <div class="info ">
-                    <img src="img/imagen-info2.jpg " alt="Imagen 2 " class="img-fluid ">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, laborum delectus. Ducimus, repellat! Quam illum iste molestiae harum, assumenda quia dolore. Aspernatur exercitationem suscipit ab consectetur nam doloremque quibusdam voluptatum?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestias, eum, quae sed vero rerum delectus eos ratione porro expedita aspernatur eveniet nemo iusto! Eos sed laboriosam ipsum iure consequatur!
-                    </p>
-                </div>
-             </div>
-         </aside>
-     </article>
-     </section>
+        <input type="email" name="email" placeholder="Ingresa tu correo *" title="Email incorrecto"
+        pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+
+        <textarea name="comments" cols="50" rows="10" placeholder="Déjame tus comentarios *" required></textarea>
+
+        <input class="btn-contact" type="submit" value="ENVIAR MENSAJE">
+    </form>
+
+   
      <!-- FOOTER -->
      <footer class="footer bg-dark ">
         <div class="container ">
