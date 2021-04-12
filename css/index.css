@@ -179,8 +179,8 @@
         width: 400%;
         display: flex;
         list-style: none;
-        transition: transform .5s ease-in-out;
-        animation: carousel-slide 12s ease-in-out 3s;
+        transition: transform 3s ease-in-out;
+        animation: carousel-slide 12s ease-in-out 3s infinite;
     }
     
     .carousel input {
@@ -197,10 +197,10 @@
         cursor: pointer;
     }
     /* La pseudo-clase :checked de CSS representa cualquier radio (<input type="radio"> (en-US)), 
-checkbox (<input type="checkbox">) u option (<option> en un elemento <select>) que está marcado 
-o conmutado a un estado(checkeado o seleccionado) */
+    checkbox (<input type="checkbox">) u option (<option> en un elemento <select>) que está marcado 
+    o conmutado a un estado(checkeado o seleccionado) */
     /* '~' es el pseudo-selector de hermanos le da estilos a todos los hermanos 
-siguiente(que sean la misma etiqueta)*/
+    siguiente(que sean la misma etiqueta)*/
     
     #slide-1:checked~.slides {
         transform: translateX(0%);
