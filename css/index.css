@@ -121,7 +121,7 @@ html{
 
 
 .hero-image.hero-image-contacto{
-    background-image: url('../img/heroImage-contacto.jpg');
+    background-image: none;
 }
 
 
@@ -195,6 +195,10 @@ p {
     list-style: none;
     transition: transform 3s ease-in-out;
     animation: carousel-slide 12s ease-in-out 3s;
+}
+
+.slide blockquote{
+    padding: 0 10rem;
 }
 
 .carousel input {
@@ -344,6 +348,10 @@ siguiente(que sean la misma etiqueta)*/
 
     .footer {
         margin-top: auto;
+    }
+
+    .contenido .hero-image{
+        background-image: url( '../img/heroImage-services.jpg');
     }
 }
 
