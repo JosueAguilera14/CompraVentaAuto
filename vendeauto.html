@@ -83,117 +83,7 @@
                 </div>
             </div>
         </nav>
-        <!-- MODAL LOGIN Y REGISTRO -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header"> <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body">
-                        <nav>
-                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Iniciar Sesión</button>
-                                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Registrarse</button>
-                            </div>
-                        </nav>
-                        <div class="tab-content" id="nav-tabContent">
-                            <!-- INICIO SESIÓN -->
-                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                                <br>
-                                <div class="card" style="display: block; text-align: center;">
-                                    <article class="card-body mx-auto" style="max-width: 400px;">
-                                        <form class="form-signin">
-                                            <h4 class="card-title mt-3 text-center">Iniciar Sesión</h4>
-                                            <br>
-                                            <P>Ingresa tu Correo:</P>
-                                            <label for="inputEmail" class="sr-only">Correo Electrónico</label>
-                                            <input type="email" id="inputEmail" class="form-control" placeholder="ejemplo@ejemplo.com" required autofocus>
-                                            <p>Ingresa tu Contrasña:</p>
-                                            <label for="inputPassword" class="sr-only">Contraseña</label>
-                                            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                                            <div class="checkbox mb-3">
-                                                <label>
-                                                    <br>
-                                                    <input type="checkbox" value="remember-me"> Recordar Sesión
-                                                </label>
-                                            </div>
-                                            <button style="height: 45px" class="btn btn-lg btn-primary btn-block" type="submit">Iniciar Sesión</button>
-                                        </form>
-                                    </article>
-                                </div>
-                                <br>
-                            </div>
-                            <!-- REGISTRO -->
-                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                                <br>
-                                <div class="card" style="display: block; text-align: center;">
-                                    <article class="card-body mx-auto" style="max-width: 400px;">
-                                        <h4 class="card-title mt-3 text-center">Crear Cuenta</h4>
-                                        <p>
-                                            <a href="#" class="btn btn-block btn-twitter"> <i class="fab fa-twitter"></i> Login via Twitter</a>
-                                            <a href="#" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f"></i> Login via facebook</a>
-                                        </p>
-                                        <p class="divider-text">
-                                            <span>O TAMBIÉN</span>
-                                        </p>
-                                        <form>
-                                            <!-- NOMBRE -->
-                                            <div class="form-group input-group">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text icono"> <i class="fa fa-user"></i> </span>
-                                                </div>
-                                                <input name="" class="form-control" placeholder="Nombre" type="text">
-                                            </div>
-                                            <!-- EMAIL -->
-                                            <br>
-                                            <div class="form-group input-group">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text icono"> <i class="fa fa-envelope"></i> </span>
-                                                </div>
-                                                <input name="" class="form-control" placeholder="Correo Electrónico" type="email">
-                                            </div>
-                                            <!-- TELEFONO -->
-                                            <br>
-                                            <div class="form-group input-group">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text icono"> <i class="fa fa-phone"></i> </span>
-                                                </div>
-                                                <select class="custom-select" style="max-width: 120px;">
-                                                <option selected="">+56</option>
-                                                <option value="1">+34</option>
-                                                <option value="2">+42</option>
-                                            </select>
-                                                <input name="" class="form-control" placeholder="Número de Teléfono" type="text">
-                                            </div>
-                                            <!-- CONTRASEÑA -->
-                                            <br>
-                                            <div class="form-group input-group">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text icono"> <i class="fa fa-lock"></i> </span>
-                                                </div>
-                                                <input class="form-control" placeholder="Crear Contraseña" type="password">
-                                            </div>
-                                            <!-- REPETIR CONTRASEÑA -->
-                                            <br>
-                                            <div class="form-group input-group">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text icono"> <i class="fa fa-lock"></i> </span>
-                                                </div>
-                                                <input class="form-control" placeholder="Repetir Contraseña" type="password">
-                                            </div>
-                                            <!-- CREAR -->
-                                            <br>
-                                            <div class="form-group">
-                                                <button type="submit" class="btn btn-primary btn-block"> Crear Cuenta </button>
-                                            </div>
-                                        </form>
-                                    </article>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <div class="container-fluid hero">
             <img src="img/heroVendeAuto.jpg" alt="venta" class="img-fluid">
         </div>
@@ -203,6 +93,117 @@
         </div>
         <br>
     </header>
+    <!-- MODAL LOGIN Y REGISTRO -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header"> <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Iniciar Sesión</button>
+                            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Registrarse</button>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <!-- INICIO SESIÓN -->
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <br>
+                            <div class="card" style="display: block; text-align: center;">
+                                <article class="card-body mx-auto" style="max-width: 400px;">
+                                    <form class="form-signin">
+                                        <h4 class="card-title mt-3 text-center">Iniciar Sesión</h4>
+                                        <br>
+                                        <P>Ingresa tu Correo:</P>
+                                        <label for="inputEmail" class="sr-only">Correo Electrónico</label>
+                                        <input type="email" id="inputEmail" class="form-control" placeholder="ejemplo@ejemplo.com" required autofocus>
+                                        <p>Ingresa tu Contrasña:</p>
+                                        <label for="inputPassword" class="sr-only">Contraseña</label>
+                                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                                        <div class="checkbox mb-3">
+                                            <label>
+                                                <br>
+                                                <input type="checkbox" value="remember-me"> Recordar Sesión
+                                            </label>
+                                        </div>
+                                        <button style="height: 45px" class="btn btn-lg btn-primary btn-block" type="submit">Iniciar Sesión</button>
+                                    </form>
+                                </article>
+                            </div>
+                            <br>
+                        </div>
+                        <!-- REGISTRO -->
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <br>
+                            <div class="card" style="display: block; text-align: center;">
+                                <article class="card-body mx-auto" style="max-width: 400px;">
+                                    <h4 class="card-title mt-3 text-center">Crear Cuenta</h4>
+                                    <p>
+                                        <a href="#" class="btn btn-block btn-twitter"> <i class="fab fa-twitter"></i> Login via Twitter</a>
+                                        <a href="#" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f"></i> Login via facebook</a>
+                                    </p>
+                                    <p class="divider-text">
+                                        <span>O TAMBIÉN</span>
+                                    </p>
+                                    <form>
+                                        <!-- NOMBRE -->
+                                        <div class="form-group input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text icono"> <i class="fa fa-user"></i> </span>
+                                            </div>
+                                            <input name="" class="form-control" placeholder="Nombre" type="text">
+                                        </div>
+                                        <!-- EMAIL -->
+                                        <br>
+                                        <div class="form-group input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text icono"> <i class="fa fa-envelope"></i> </span>
+                                            </div>
+                                            <input name="" class="form-control" placeholder="Correo Electrónico" type="email">
+                                        </div>
+                                        <!-- TELEFONO -->
+                                        <br>
+                                        <div class="form-group input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text icono"> <i class="fa fa-phone"></i> </span>
+                                            </div>
+                                            <select class="custom-select" style="max-width: 120px;">
+                                            <option selected="">+56</option>
+                                            <option value="1">+34</option>
+                                            <option value="2">+42</option>
+                                        </select>
+                                            <input name="" class="form-control" placeholder="Número de Teléfono" type="text">
+                                        </div>
+                                        <!-- CONTRASEÑA -->
+                                        <br>
+                                        <div class="form-group input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text icono"> <i class="fa fa-lock"></i> </span>
+                                            </div>
+                                            <input class="form-control" placeholder="Crear Contraseña" type="password">
+                                        </div>
+                                        <!-- REPETIR CONTRASEÑA -->
+                                        <br>
+                                        <div class="form-group input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text icono"> <i class="fa fa-lock"></i> </span>
+                                            </div>
+                                            <input class="form-control" placeholder="Repetir Contraseña" type="password">
+                                        </div>
+                                        <!-- CREAR -->
+                                        <br>
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-primary btn-block"> Crear Cuenta </button>
+                                        </div>
+                                    </form>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container formulario" style="align-items: center;">
         <h1 style="text-align: center;">COTIZA TU AUTO</h1>
         <br>
