@@ -4,7 +4,7 @@ html{
 
 
 
-/*NavBar*/
+/* NavBar */
     
 .logo-empresa {
     font-size: 1rem;
@@ -121,7 +121,7 @@ html{
 
 
 .hero-image.hero-image-contacto{
-    background-image: url('../img/heroImage-contacto.jpg');
+    background-image: none;
 }
 
 
@@ -344,6 +344,10 @@ siguiente(que sean la misma etiqueta)*/
 
     .footer {
         margin-top: auto;
+    }
+
+    .contenido .hero-image{
+        background-image: url( '../img/heroImage-services.jpg');
     }
 }
 
