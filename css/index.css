@@ -201,8 +201,8 @@ p {
     width: 400%;
     display: flex;
     list-style: none;
-    transition: transform 3s ease-in-out;
-    animation: carousel-slide 12s ease-in-out 3s infinite;
+    transition: transform .5s ease-in-out;
+    animation: carousel-slide 12s ease-in-out 3s;
 }
 
 .carousel input {
@@ -247,6 +247,23 @@ siguiente(que sean la misma etiqueta)*/
 #slide-4:checked~.slides-nav label#dot-4 {
     background-color: #666666;
 }
+
+
+.slide blockquote{
+    font-size: .8rem;
+    width: 70%;
+    margin: 0 auto;
+    
+}
+
+.slide h3{
+    font-size: 1.1rem;
+}
+
+.slide h6{
+    font-size: .9rem;
+}
+
 /*imagenes con info que acompañan al slider*/
 
 .info {
@@ -257,7 +274,7 @@ siguiente(que sean la misma etiqueta)*/
 
 .info p {
     margin-bottom: 7rem; 
-    font-size: .8rem; 
+    font-size: .85rem; 
     width: 100%; 
     margin: 0 auto; 
     padding: 1rem 6rem; 
@@ -359,6 +376,21 @@ siguiente(que sean la misma etiqueta)*/
     .contenido .hero-image{
         background-image: url( '../img/heroImage-services.jpg');
     }
+
+    .slide blockquote{
+        font-size: 1rem;
+        width: auto;
+    }
+
+    .slide h3{
+        font-size: 1.5rem;
+    }
+    
+    .slide h6{
+        font-size: 1.2rem;
+    }
+
+
 }
 
 
