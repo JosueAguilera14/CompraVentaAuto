@@ -2,6 +2,10 @@ html{
     box-sizing: border-box;
 }
 
+body{
+    background-color: #bdbaba;
+}
+
 
 
 /* NavBar */
@@ -197,8 +201,8 @@ p {
     width: 400%;
     display: flex;
     list-style: none;
-    transition: transform 3s ease-in-out;
-    animation: carousel-slide 12s ease-in-out 3s infinite;
+    transition: transform .5s ease-in-out;
+    animation: carousel-slide 12s ease-in-out 3s;
 }
 
 .carousel input {
@@ -243,6 +247,23 @@ siguiente(que sean la misma etiqueta)*/
 #slide-4:checked~.slides-nav label#dot-4 {
     background-color: #666666;
 }
+
+
+.slide blockquote{
+    font-size: .8rem;
+    width: 70%;
+    margin: 0 auto;
+    
+}
+
+.slide h3{
+    font-size: 1.1rem;
+}
+
+.slide h6{
+    font-size: .9rem;
+}
+
 /*imagenes con info que acompañan al slider*/
 
 .info {
@@ -253,7 +274,7 @@ siguiente(que sean la misma etiqueta)*/
 
 .info p {
     margin-bottom: 7rem; 
-    font-size: .8rem; 
+    font-size: .85rem; 
     width: 100%; 
     margin: 0 auto; 
     padding: 1rem 6rem; 
@@ -319,6 +340,8 @@ siguiente(que sean la misma etiqueta)*/
     text-align: center;
 }
 
+
+
 @media screen and (min-width: 768px) {
     .contenido .hero-image-content {
         grid-template-columns: repeat(3, 1fr);
@@ -353,89 +376,21 @@ siguiente(que sean la misma etiqueta)*/
     .contenido .hero-image{
         background-image: url( '../img/heroImage-services.jpg');
     }
-}
 
-/* *** Contact Form *** */
-
-.btn-contact {
-    border-radius: .5rem;
-    padding: 1rem;
-    display: inline-block;
-    width: 200px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #343a40;
-    text-transform: uppercase;
-}
-
-.box-shadow-1 {
-    box-shadow: .25rem .25rem 1rem rgba(0, 0, 0, 0.25);
-}
-
-.contact-form{
-    margin: 2rem auto;
-    padding: 1rem;
-    max-width: 800px;
-}
-
-.contact-form > *{
-    padding: .5rem;
-    margin: 1rem auto;
-    display: block;
-    width: 100%;
-}
-
-.contact-form input,
-.contact-form textarea{
-    font-size: .85rem;
-    font-family: var(--font);
-}
-
-.contact-form input{
-    border: 0;
-    padding-left: 0;
-    border-bottom: thin solid #666666;
-}
-
-.contact-form textarea{
-    border: thin solid #666666;
-    /* Esta propiedad permite que el area de texto no se redimensione */
-    resize: none;
-}
-
-.contact-form input[type="submit"]{
-    margin-top: 0;
-    cursor: pointer;
-    transition: all .5s ease-out;
-}
-
-.contact-form input[type="submit"]:hover{
-    opacity: .75;
-}
-
-.contact-form *::placeholder{
-    color: #666666;
-}
-
-@media screen and (min-width: 1024px){
-    .contact-form{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        column-gap: 1rem;
-    }
-
-    .contact-form input,
-    .contact-form textarea{
+    .slide blockquote{
         font-size: 1rem;
+        width: auto;
     }
 
-    .contact-form textarea{
-        grid-column: span 2;
+    .slide h3{
+        font-size: 1.5rem;
+    }
+    
+    .slide h6{
+        font-size: 1.2rem;
     }
 
-    .contact-form input[type="submit"]{
-        margin-left: 0;
-    }
+
 }
+
+
