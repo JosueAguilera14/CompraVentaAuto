@@ -214,16 +214,22 @@
         <form class="row g-3 needs-validation" novalidate>
             <div class="col-md-3">
                 <label for="validationCustom01" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                <input type="text" class="form-control" id="validationCustom01" value="" required>
                 <div class="valid-feedback">
                     ¡¡Excelente!!
+                </div>
+                <div class="invalid-feedback">
+                    Rellene este campo.
                 </div>
             </div>
             <div class="col-md-3">
                 <label for="validationCustom02" class="form-label">Apellido</label>
-                <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                <input type="text" class="form-control" id="validationCustom02" value="" required>
                 <div class="valid-feedback">
                     ¡¡Excelente!!
+                </div>
+                <div class="invalid-feedback">
+                    Rellene este campo.
                 </div>
             </div>
             <div class="col-md-4">
@@ -231,8 +237,11 @@
                 <div class="input-group has-validation">
                     <span class="input-group-text" id="inputGroupPrepend">@</span>
                     <input type="text" class="form-control" id="validationCustomEmail" aria-describedby="inputGroupPrepend" required>
+                    <div class="valid-feedback">
+                        ¡¡Excelente!!
+                    </div>
                     <div class="invalid-feedback">
-                        Escriba un correo válido.
+                        Rellene este campo.
                     </div>
                 </div>
             </div>
@@ -240,19 +249,31 @@
                 <label for="validationCustom03" class="form-label">Marca de auto</label>
                 <input type="text" class="form-control" id="validationCustom03" value="" required>
                 <div class="valid-feedback">
-                    Looks good!
+                    ¡¡Excelente!!
+                </div>
+                <div class="invalid-feedback">
+                    Rellene este campo.
                 </div>
             </div>
             <div class="col-md-3">
                 <label for="validationCustom04" class="form-label">Modelo de auto</label>
                 <input type="text" class="form-control" id="validationCustom04" value="" required>
                 <div class="valid-feedback">
-                    Looks good!
+                    ¡¡Excelente!!
+                </div>
+                <div class="invalid-feedback">
+                    Rellene este campo.
                 </div>
             </div>
             <div class="col-md-4">
                 <label for="formFileMultiple" class="form-label">Multiple fotos de su auto</label>
-                <input class="form-control" type="file" id="formFileMultiple" multiple>
+                <input class="form-control" type="file" id="formFileMultiple" multiple required>
+                <div class="valid-feedback">
+                    ¡¡Excelente!!
+                </div>
+                <div class="invalid-feedback">
+                    Rellene este campo.
+                </div>
             </div>
             <div class="col-12" style="text-align: center;">
                 Lo contactaremos a la brevedad.
@@ -294,6 +315,9 @@
             </div>
         </div>
     </footer>
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="js/formulario-validacion.js"></script>
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js " integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf " crossorigin="anonymous "></script>
 </body>
