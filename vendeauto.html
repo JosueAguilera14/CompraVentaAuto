@@ -114,15 +114,25 @@
                             <br>
                             <div class="card" style="display: block; text-align: center;">
                                 <article class="card-body mx-auto" style="max-width: 400px;">
-                                    <form class="form-signin">
+                                    <form class="form-signin needs-validation" novalidate>
                                         <h4 class="card-title mt-3 text-center">Iniciar Sesión</h4>
                                         <br>
-                                        <P>Ingresa tu Correo:</P>
-                                        <label for="inputEmail" class="sr-only">Correo Electrónico</label>
-                                        <input type="email" id="inputEmail" class="form-control" placeholder="ejemplo@ejemplo.com" required autofocus>
-                                        <p>Ingresa tu Contrasña:</p>
-                                        <label for="inputPassword" class="sr-only">Contraseña</label>
+                                        <label for="email" class="form-label">Correo Electrónico:</label>
+                                        <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                                        <div class="valid-feedback">
+                                            ¡El correo luce bien!
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            ¡Escriba un correo válido!
+                                        </div>
+                                        <label for="inputPassword" class="form-label">Contraseña:</label>
                                         <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                                        <div class="valid-feedback">
+                                            ¡La contraseña luce bien!
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            ¡Contraseña Errónea!
+                                        </div>
                                         <div class="checkbox mb-3">
                                             <label>
                                                 <br>
@@ -148,13 +158,13 @@
                                     <p class="divider-text">
                                         <span>O TAMBIÉN</span>
                                     </p>
-                                    <form>
+                                    <form class="needs-validation" novalidate>
                                         <!-- NOMBRE -->
                                         <div class="form-group input-group">
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text icono"> <i class="fa fa-user"></i> </span>
                                             </div>
-                                            <input name="" class="form-control" placeholder="Nombre" type="text">
+                                            <input name="nombre" class="form-control" placeholder="Nombre" type="text" required>
                                         </div>
                                         <!-- EMAIL -->
                                         <br>
@@ -162,7 +172,7 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text icono"> <i class="fa fa-envelope"></i> </span>
                                             </div>
-                                            <input name="" class="form-control" placeholder="Correo Electrónico" type="email">
+                                            <input name="email" class="form-control" placeholder="Correo Electrónico" type="email" required>
                                         </div>
                                         <!-- TELEFONO -->
                                         <br>
@@ -175,7 +185,7 @@
                                             <option value="1">+34</option>
                                             <option value="2">+42</option>
                                         </select>
-                                            <input name="" class="form-control" placeholder="Número de Teléfono" type="text">
+                                            <input name="phone" class="form-control" placeholder="Número de Teléfono" type="text" required>
                                         </div>
                                         <!-- CONTRASEÑA -->
                                         <br>
@@ -183,7 +193,7 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text icono"> <i class="fa fa-lock"></i> </span>
                                             </div>
-                                            <input class="form-control" placeholder="Crear Contraseña" type="password">
+                                            <input name="contraseña" class="form-control" placeholder="Crear Contraseña" type="password" required>
                                         </div>
                                         <!-- REPETIR CONTRASEÑA -->
                                         <br>
@@ -191,7 +201,7 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text icono"> <i class="fa fa-lock"></i> </span>
                                             </div>
-                                            <input class="form-control" placeholder="Repetir Contraseña" type="password">
+                                            <input name="re-contraseña" class="form-control" placeholder="Repetir Contraseña" type="password" required>
                                         </div>
                                         <!-- CREAR -->
                                         <br>
