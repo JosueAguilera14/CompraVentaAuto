@@ -1,32 +1,8 @@
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-(function() {
-    'use strict'
-
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.querySelectorAll('.needs-validation')
-
-    // Loop over them and prevent submission
-    Array.prototype.slice.call(forms)
-        .forEach(function(form) {
-            form.addEventListener('submit', function(event) {
-                if (!form.checkValidity()) {
-                    event.preventDefault()
-                    event.stopPropagation()
-                }
-
-                form.classList.add('was-validated')
-            }, false)
-        })
-})()
-
-
-
-
-/** Contact Form **/
+/* ********** ContactForm ********** */
 
 (() => {
     const $form = document.querySelector('.contact-form'), //<form>
-          $loader = document.querySelector('.contact-form-loader'), //<div> que contiene el .svg del loader
+          $loader = document.querySelector('.contact-form-loader img'), //<div> que contiene el .svg del loader
           $response = document.querySelector('.contact-form-response'); //<article> que contiene el mensaje con emoticon(respuesta del form.)
 
     //Evento 'submit' para envío de formulario
