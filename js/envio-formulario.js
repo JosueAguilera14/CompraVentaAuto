@@ -2,7 +2,7 @@
 
 (() => {
     const $form = document.querySelector('.contact-form'), //<form>
-          $loader = document.querySelector('.contact-form-loader img'), //<div> que contiene el .svg del loader
+          $loader = document.querySelector('.contact-form-loader'), //<div> que contiene el .svg del loader
           $response = document.querySelector('.contact-form-response'); //<article> que contiene el mensaje con emoticon(respuesta del form.)
 
     //Evento 'submit' para envío de formulario
