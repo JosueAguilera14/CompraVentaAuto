@@ -1,4 +1,8 @@
 /* *** Contact Form *** */
+body{
+    background-color: #ffffff;
+}
+
 
 .btn-contact {
     border-radius: .5rem;
