@@ -4,7 +4,7 @@ function contactFormValidations(){
     //Seleccionando todos los elementos del formulario que tengan el atributo 'required'
     const $inputs = d.querySelectorAll(".contact-form [required]");
 
-    // console.log($inputs);
+    console.log($inputs);
 
     //Recorriendo inputs.
     $inputs.forEach(input => {
@@ -12,7 +12,7 @@ function contactFormValidations(){
         $span.id = input.name; //Agregando id a cada <span> con el valor del atributo 'name' de los inputs
         $span.textContent = input.title;//Agregando el valor del atributo 'title' como contenido de texto a los <span>
         // Agregando a cada <span> la clase '.contact-form-error' y la clase '.none'
-        $span.classList.add("contact-form-error","none")
+        $span.classList.add("contact-form-error","none");
         //Agregando cada <span> como hermano siguiente de cada input
         input.insertAdjacentElement("afterend",$span);
     
