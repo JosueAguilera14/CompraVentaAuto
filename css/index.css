@@ -129,6 +129,10 @@ body {
     background-image: url('../img/heroImage-galeria.jpg');
 }
 
+.hero-image.hero-image-usado {
+    background-image: url('../img/heroImage-usado.jpg');
+}
+
 
 /*imagenes con info que acompañan al slider*/
 
