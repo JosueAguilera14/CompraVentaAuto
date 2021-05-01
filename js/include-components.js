@@ -28,14 +28,14 @@ const getHTML = options => {
 
 d.addEventListener("DOMContentLoaded", () => {
     getHTML({
-        url: "assets/home.html", //endpoint de HTML consumido
+        url: "assets/components/carrusel-slider.html", //endpoint de HTML consumido
         success: (html) => $main.innerHTML = html, //Agregando HTML consumido al <main>
         error: (err) => $main.innerHTML = `<h1>${err}</h1>` //Agregando error al <main>
     });
 });
 
 d.addEventListener("click", e => {
-    if (e.target.matches(".menu a")) { //Si se clickea cualquier enlace del menú..
+    if (e.target.matches(".menu enlace")) { //Si se clickea cualquier enlace del menú..
         e.preventDefault(); //Quitando evento por defecto
         getHTML({
             url: e.target.href, //endpoint de HTML consumido según el enlace que se clickee
