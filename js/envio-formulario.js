@@ -9,7 +9,7 @@
     $form.addEventListener("submit",e => {
         e.preventDefault(); //Quitando evento por defecto
         $loader.classList.remove('none'); //Eliminando clase 'none' del loader
-        fetch("https://formsubmit.co/aja/moi.prado@duocuc.cl",{
+        fetch("https://formsubmit.co/ajax/moi.prado@duocuc.cl",{
             method: "POST", //Enviando formulario por el método POST
             //El objeto FormData envía el formulario(el elemento que origina el evento) al servidor(la API)
             body: new FormData(e.target)
