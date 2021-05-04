@@ -2,9 +2,7 @@ html {
     box-sizing: border-box;
 }
 
-body {
-    background-color: #bdbaba;
-}
+
 
 
 /* NavBar */
@@ -127,6 +125,10 @@ body {
 
 .hero-image.hero-image-galeria {
     background-image: url('../img/heroImage-galeria.jpg');
+}
+
+.hero-image.hero-image-usado {
+    background-image: url('../img/heroImage-usado.jpg');
 }
 
 
