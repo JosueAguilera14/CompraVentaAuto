@@ -1,0 +1,17 @@
+.tarjetas {
+    margin: 0;
+    text-align: center;
+}
+
+.tarjeta {
+    padding: 10px;
+    text-align: center;
+}
+
+.card {
+    width: 100%;
+}
+
+.card-body {
+    color: #000;
+}
