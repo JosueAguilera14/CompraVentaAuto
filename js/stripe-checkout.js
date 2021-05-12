@@ -72,8 +72,8 @@ d.addEventListener('click',e => {
         .redirectToCheckout({ //redirectToCheckout() redirige al formulario de pago(se pasan configuraciones)
             lineItems: [{price, quantity: 1}],//Se define el id del precio del producto y la cantidad a cobrar
             mode: "payment",//Se define modo payment ya que se puso pago único
-            successUrl: "http://127.0.0.1:5500/assets/stripe-success.html",
-            cancelUrl: "http://127.0.0.1:5500/assets/stripe-cancel.html"
+            successUrl: "http://127.0.0.1:5501/assets/stripe-success.html",
+            cancelUrl: "http://127.0.0.1:5501/assets/stripe-success.html"
         })
         .then(res => {
             console.log(res);
