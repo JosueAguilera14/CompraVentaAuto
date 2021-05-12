@@ -131,6 +131,10 @@ html {
     background-image: url('../img/heroImage-usado.jpg');
 }
 
+.hero-image.hero-image-nuevo {
+    background-image: url('../img/hero-image-nuevos.jpg');
+}
+
 
 /*Configuracion texto dentro de carrusel*/
 
