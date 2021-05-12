@@ -1,9 +1,19 @@
+@media (max-width: 1920px) {
+    .card-body {
+        height: 210px;
+    }
+}
+
 @media (max-width: 777px) {
     .texto-carrusel h3 {
         font-size: 100%;
     }
     .texto-carrusel p {
         font-size: 70%;
+    }
+
+    .card-body {
+        height: 210px;
     }
 }
 
@@ -14,6 +24,10 @@
 
     .texto-carrusel p {
         font-size: 70%;
+    }
+
+    .card-body {
+        min-height: 210px;
     }
 }
 
@@ -26,6 +40,10 @@
     }
     .texto-carrusel {
         width: 100%;
+    }
+
+    .card-body {
+        min-height: 230px;
     }
 }
 
@@ -44,5 +62,17 @@
 }
 
 .card-body {
-    color: #000;
+    background-color: #35373a;
+    color:white;
+}
+
+.ir {
+    background-color: white;
+    color: #35373a;
+}
+
+.ir:hover{
+    border-color: white;
+    background-color:#35373a;
+    color: white;
 }
